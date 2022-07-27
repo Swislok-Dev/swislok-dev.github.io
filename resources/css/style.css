@@ -1,8 +1,21 @@
 /* Universal Styles */
 
+.border {
+  border: 1px solid white;
+}
+
 body {
   background-color: gray;
   color: bisque;
+}
+
+section {
+  border: 1px solid white;
+  margin: 30px 20px;
+}
+
+h2 {
+  font-size: 2.5rem;
 }
 
 /* Biography Section */
@@ -13,7 +26,6 @@ body {
   margin: 0 20px;
   justify-items: center;
   align-items: center;
-  border: 1px white solid;
   height: 500px;
 }
 
@@ -23,10 +35,40 @@ body {
 
 .bio-img img {
   width: 50%;
-  border-radius: 50%;
+  /* border-radius: 50%; */
 }
 
 .bio-text {
   width: 70%;
   align-self: center;
 }
+
+/* Skills Section */
+
+.skills {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  /* grid-template-rows: 1fr 1fr; */
+  align-items: center;
+  justify-items: center;
+}
+
+.skills h2 {
+  width: 50%;
+  text-align: center;
+}
+
+.skills ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  gap: 30px 120px;
+}
+
+.skills li {
+  margin: auto;
+  text-decoration: none;
+  list-style-type: none;
+  font-size: 1.5rem;
+}
+
