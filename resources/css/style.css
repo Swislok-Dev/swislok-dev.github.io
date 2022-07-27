@@ -1,0 +1,32 @@
+/* Universal Styles */
+
+body {
+  background-color: gray;
+  color: bisque;
+}
+
+/* Biography Section */
+
+.biography {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  margin: 0 20px;
+  justify-items: center;
+  align-items: center;
+  border: 1px white solid;
+  height: 500px;
+}
+
+.bio-img {
+  text-align: center;
+}
+
+.bio-img img {
+  width: 50%;
+  border-radius: 50%;
+}
+
+.bio-text {
+  width: 70%;
+  align-self: center;
+}
