@@ -7,6 +7,7 @@
 body {
   background-color: gray;
   color: bisque;
+  text-align: center;
 }
 
 section {
@@ -55,7 +56,6 @@ h2 {
 
 .skills h2 {
   width: 50%;
-  text-align: center;
 }
 
 .skills ul {
@@ -71,4 +71,26 @@ h2 {
   list-style-type: none;
   font-size: 1.5rem;
 }
+
+/* Experience Section */
+
+.experience {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+}
+
+.box {
+  padding-left: 20px;
+  background-color: #343434;
+  text-align: left;
+}
+
+.job-duties {
+  margin: 30px ;
+  line-height: 2em;
+  max-width: 80%;
+}
+
+
 
