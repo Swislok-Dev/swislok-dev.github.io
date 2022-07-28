@@ -40,7 +40,7 @@ h2 {
 
 .bio-img img {
   width: 50%;
-  /* border-radius: 50%; */
+  border-radius: 50%;
 }
 
 .bio-text {
@@ -53,7 +53,6 @@ h2 {
 .skills {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  /* grid-template-rows: 1fr 1fr; */
   align-items: center;
   justify-items: center;
 }
@@ -91,7 +90,7 @@ h2 {
 }
 
 .job-duties {
-  margin: 30px ;
+  margin: 30px;
   line-height: 2em;
   max-width: 80%;
 }
