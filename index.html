@@ -31,17 +31,19 @@
     <!-- Skills Section -->
     <section class="skills">
       <h2 class="skills-title">Skills</h2>
-      <ul class="skills-list">
-        <li class="skill-item">HTML</li>
-        <li class="skill-item">CSS</li>
-        <li class="skill-item">JavaScript</li>
-        <li class="skill-item">React</li>
-        <li class="skill-item">Ruby on Rails</li>
-        <li class="skill-item">Node.js</li>
-        <li class="skill-item">Express.js</li>
-        <li class="skill-item">MongoDB</li>
-        <li class="skill-item">Postgresql</li>
-      </ul>
+      <div class="dark-column">
+        <ul class="skills-list">
+          <li class="skill-item">HTML</li>
+          <li class="skill-item">CSS</li>
+          <li class="skill-item">JavaScript</li>
+          <li class="skill-item">React</li>
+          <li class="skill-item">Ruby on Rails</li>
+          <li class="skill-item">Node.js</li>
+          <li class="skill-item">Express.js</li>
+          <li class="skill-item">MongoDB</li>
+          <li class="skill-item">Postgresql</li>
+        </ul>
+      </div>
     </section>
 
     <!-- Experience Section -->
@@ -71,6 +73,35 @@
           </li>
         </ul>
       </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+      <h2>Contact</h2>
+      <form action="">
+        <input
+          type="text"
+          class="form-control"
+          name="name"
+          placeholder="Name"
+        />
+        <br />
+        <input
+          type="text"
+          class="form-control"
+          name="email"
+          placeholder="Email"
+        />
+        <br />
+        <textarea
+          name="message"
+          class="form-control"
+          rows="4"
+          placeholder="Message"
+        ></textarea>
+        <br />
+        <input type="submit" value="Send Message" class="form-control submit" />
+      </form>
     </section>
   </body>
 </html>
