@@ -56,15 +56,6 @@ h2 {
   height: 500px;
 }
 
-.bio-img {
-  text-align: center;
-}
-
-.bio-img img {
-  width: 50%;
-  border-radius: 50%;
-}
-
 .bio-text {
   width: 70%;
 }
