@@ -64,17 +64,17 @@ h2 {
 /* Skills Section */
 
 .skills {
-    height: 500px;
+    min-height: 10px;
+    max-height: 500px;
 }
 
 .skills ul {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 100%);
-    align-items: center;
-    row-gap: 20px;
-    justify-items: center;
-    margin-right: 10px;
+    align-content: center;
+    gap: 20px;
+    justify-items: baseline;
+    min-height: 100px;
 }
 
 .skills li {
