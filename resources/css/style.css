@@ -27,12 +27,18 @@ section {
   display: grid;
   grid-template-columns: 1fr 2fr;
   align-items: center;
+  border-radius: 10px;
 }
 
 .right {
   background-color: var(--color4);
   width: 100%;
   height: 100%;
+  /*border-radius: 10px;*/
+}
+
+h1 {
+  font-size: 3rem;
 }
 
 h2 {
@@ -43,8 +49,8 @@ h2 {
 
 .biography {
   display: grid;
-  grid-template-columns: 1fr 2fr;
-  margin: 0 20px;
+  grid-template-columns: 1fr;
+  margin: 30px 20px;
   justify-items: center;
   align-items: center;
   height: 500px;
@@ -61,7 +67,6 @@ h2 {
 
 .bio-text {
   width: 70%;
-  align-self: space-between;
 }
 
 /* Skills Section */
