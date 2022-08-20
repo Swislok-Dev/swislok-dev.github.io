@@ -1,24 +1,25 @@
 /* Universal Styles */
 
 :root {
-    --color1: grey;
+    --background-color: black;
+    --header-background-color: darkblue;
+    --sub-background-color: rgb(84, 48, 226);
+    --button-hover: rgba(0, 0, 139, 0.3);
+    --text-color: lightblue;
     --color2: lightgrey;
-    --color3: darkgrey;
-    --color4: #706e6e;
 }
 
 html {
-    background-color: var(--color3);
+    background-color: var(--background-color);
     font-family: Helvetica, monospace
 }
 
 body {
-    color: bisque;
+    color: var(--text-color);
 }
 
 section {
-    background-color: var(--color1);
-    border: 1px solid var(--color2);
+    background-color: var(--header-background-color);
     margin: 40px 20px;
     min-height: 400px;
     display: flex;
@@ -27,7 +28,6 @@ section {
     align-items: center;
     justify-content: center;
     border-radius: 10px;
-    /*text-align: center;*/
 }
 
 h1 {
@@ -39,11 +39,27 @@ h2 {
 }
 
 .bottom-section {
-    background-color: var(--color4);
+    background-color: var(--sub-background-color);
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     width: 100%;
     flex-grow: 1;
+}
+
+.biography {
+    min-height: 90vh;
+}
+
+@media screen and (min-width: 700px)  {
+    .biography {
+        min-height: 60vh;
+    }
+}
+
+@media screen and (min-height: 769px) {
+    .biography {
+        min-height: 60vh;
+    }
 }
 
 /*!* Skills Section *!*/
@@ -80,6 +96,8 @@ h2 {
     }
 }
 
+
+
 /*!* Experience Section *!*/
 
 .job {
@@ -89,7 +107,7 @@ h2 {
 
 .job-duties {
     margin: 30px;
-    line-height: 2em;
+    line-height: 3em;
     max-width: 80%;
 }
 
@@ -104,6 +122,7 @@ h2 {
 
     .duty-wide {
         display: list-item;
+        line-height: 4em;
     }
 }
 
@@ -121,35 +140,37 @@ h2 {
     background: transparent;
     border: none;
     outline: none;
-    border-bottom: 1px solid bisque;
+    border-bottom: 1px solid var(--text-color);
     font-size: 18px;
     margin: 20px;
     overflow: hidden;
+    line-height: 2em;
 }
 
 .form-control::placeholder,
 textarea.form-control::placeholder {
-    color: bisque;
+    color: var(--text-color);
     font-family: Helvetica, monospace;
     position: relative;
     left: 0;
-    transition: left  0.4s ease-in-out;
-    -webkit-transition: left 0.4s ease-in-out;
-    -moz-transition: left 0.4s ease-in-out;
+    transition: left 0.4s ease-in-out, color 0.4s ease-in-out;
+    -webkit-transition: left 0.4s ease-in-out, color 0.4s ease-in-out;
+    -moz-transition: left 0.4s ease-in-out, color 0.4s ease-in-out;
 }
 
 
 
 .form-control:focus::placeholder {
     position: relative;
+    color: transparent;
     left: 60%;
 }
 
 
-form .submit {
-    box-sizing: content-box;
-    background-color: bisque;
-    color: var(--color1);
+.submit {
+    box-sizing: border-box;
+    background-color: var(--header-background-color);
+    color: var(--text-color);
     font-size: 20px;
     font-weight: bold;
     letter-spacing: 2px;
@@ -157,6 +178,7 @@ form .submit {
     margin-top: 20px;
     margin-bottom: 30px;
     border-radius: 10px;
+    border: none;
 }
 
 form .submit:focus {
@@ -164,12 +186,14 @@ form .submit:focus {
 }
 
 form .submit:hover {
-    background-color: rgba(255, 228, 196, 0.756);
+    background-color: var(--button-hover);
+    /* background-color: var(--sub-background-color); */
     cursor: pointer;
+    border: 3px solid darkblue;
 }
 
 form .submit:active {
-    background-color: rgba(255, 228, 196, 0.5);
+    background-color: navy;
 }
 
 @media (min-width: 400px) {
