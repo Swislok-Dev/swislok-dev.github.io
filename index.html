@@ -8,11 +8,10 @@
     <title>Cory Marker</title>
   </head>
   <body>
-
     <!-- Biography Section -->
     <section class="biography">
       <div>
-<!--        <img src="./resources/photos/me.jpeg" alt="Me" />-->
+        <!--        <img src="./resources/photos/me.jpeg" alt="Me" />-->
         <h1>Cory Marker</h1>
         <h2>Web Developer</h2>
       </div>
@@ -37,21 +36,48 @@
       </div>
     </section>
 
+    <!-- Projects Section -->
+    <section class="projects">
+      <h2 id="projects-heading">Projects</h2>
+      <div class="bottom-section">
+        <article id="project-1" class="project article">
+          <h3 class="project-title">Flight Tracker</h3>
+          <h4 class="project-description">
+            Airline flight tracker to view current status of upcoming flight
+          </h4>
+          <ul class="project-details article-list">
+            <li>Built using Express.js server framework for API calls</li>
+            <li>Generated UI using React</li>
+            <li>Utilized Redux for state management</li>
+          </ul>
+          <img
+            src="./resources/photos/flight-tracker-image.png"
+            alt="flight-tracker-image"
+            class="project-image"
+          />
+          <div class="links">
+            <button onclick="location.href='http://airline-tracker.herokuapp.com/'">Site</button>
+            <button onclick="location.href='https://github.com/Swislok-Dev/Airline-Tracker'">Source</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
     <!-- Experience Section -->
     <section class="experience">
       <h2 class="exp-title">Experience</h2>
       <div class="bottom-section">
-        <div class="job">
+        <article class="article">
           <h3>Cargill</h3>
           <h4>November 29, 2010 - Present</h4>
-          <ul class="job-duties">
+          <ul class="article-list">
             <li class="duty-narrow">Support supervisor</li>
             <li class="duty-narrow">Data entry (SAP)</li>
             <li class="duty-narrow">Handle various production aspects</li>
             <li class="duty-narrow">Developed data spreadsheets</li>
             <li class="duty-wide">
-              Support supervisor in scheduling, team building, training,
-              and employee relations
+              Support supervisor in scheduling, team building, training, and
+              employee relations
             </li>
             <li class="duty-wide">
               Perform data entry in SAP inventory management system to support
@@ -67,7 +93,7 @@
               provide additional information for supervisors
             </li>
           </ul>
-        </div>
+        </article>
       </div>
     </section>
 
@@ -75,7 +101,10 @@
     <section class="contact">
       <h2>Contact</h2>
       <div class="bottom-section">
-        <form action="https://formsubmit.co/cfd14fcd11cb6dae8de22321c87a3d4a" method="POST">
+        <form
+          action="https://formsubmit.co/cfd14fcd11cb6dae8de22321c87a3d4a"
+          method="POST"
+        >
           <input
             class="form-control"
             type="text"

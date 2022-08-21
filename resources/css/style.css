@@ -30,12 +30,32 @@ section {
     border-radius: 10px;
 }
 
-h1 {
-    font-size: 3em;
+h1 { font-size: 3em; }
+
+h2 { font-size: 2.5em; }
+
+h3 { font-size: 1.5em; }
+
+h4 { font-size: 1.3em; }
+
+button {
+    box-sizing: border-box;
+    background-color: var(--header-background-color);
+    color: var(--text-color);
+    height: 30px;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin: 10px auto 10px;
+    border-radius: 10px;
+    border: none;
+    width: 40%;
 }
 
-h2 {
-    font-size: 2.5em;
+button:hover {
+    cursor: pointer;
+    background-color: var(--button-hover);
+    border: 3px solid darkblue;
 }
 
 .bottom-section {
@@ -45,6 +65,34 @@ h2 {
     width: 100%;
     flex-grow: 1;
 }
+
+.article {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 10px;
+}
+
+.article-list {
+    margin: 0 5px 20px 5px;
+    line-height: 3em;
+    max-width: 100%;
+}
+
+.article-list li {
+    line-height: 2em;
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+    margin-top: 20px;
+    
+}
+
+/* Biography Section */
 
 .biography {
     min-height: 90vh;
@@ -60,6 +108,20 @@ h2 {
     .biography {
         min-height: 60vh;
     }
+}
+
+/* Projects Section */
+
+.project-description {
+    font-style: italic;
+    opacity: 0.7;
+    font-size: 1rem;
+}
+
+.project-image {
+    margin: 0 auto;
+    width: 90%;
+    max-width: 900px;
 }
 
 /*!* Skills Section *!*/
@@ -96,20 +158,7 @@ h2 {
     }
 }
 
-
-
 /*!* Experience Section *!*/
-
-.job {
-    padding-left: 20px;
-    text-align: left;
-}
-
-.job-duties {
-    margin: 30px;
-    line-height: 3em;
-    max-width: 80%;
-}
 
 .duty-wide {
     display: none;
@@ -200,5 +249,4 @@ form .submit:active {
     .form-control {
         width: 60%;
     }
-
 }
